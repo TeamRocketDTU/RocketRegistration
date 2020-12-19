@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Vaccine | Register</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+</head>
+<body>
+    <header>
+        <div class="admin">
+            <div class="banner">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="logo">
+                </div>
+                <h2><img src="../svgs/name2 .svg" alt=""></h2>
+            </div>
+            <p>
+                <a href="#">Admin<br> <span> login </span></a>
+            </p>
+        </div>
+    </header>
+    <div class="circle"></div>
+
+    <main>
+            <div class="form">
+                <form>
+                    <div class="name">
+                        <label for="name" class="label-name">
+                            <span class="content-name">Name:</span>
+                        </label><br>
+                        <input type="text" name="name" id="name" required autocomplete="off"><br>
+                    </div>
+                    <div class="age">
+                        <label for="age" class="label-age">
+                            <span class="content-age">Age:</span>
+                        </label><br>
+                        <input type="number" name="age" id="age" required autocomplete="off"><br>
+                    </div>
+
+                    <div class="uid">
+                        <label for="uid" class="label-uid">
+                            <span class="content-uid">Aadhar No:</span>
+                        </label><br>
+                        <input type="number" name="uid" id="uid" required autocomplete="off"><br>
+                    </div>
+
+
+                    <div class="sex">
+                        <div>
+                            <div>Gender:</div>
+                        </div>
+                        <div class="gen-rad">
+                            <input type="radio" name="male" id="Gender" required autocomplete="off">
+                            <label for="male" class="label-Gender">
+                                <span class="content-Gender">Male</span>
+                            </label><br>
+                            <input type="radio" name="male" id="Gender" required autocomplete="off">
+                            <label for="male" class="label-Gender">
+                                <span class="content-Gender">Female</span>
+                            </label><br>
+                            <input type="radio" name="male" id="Gender" required autocomplete="off">
+                            <label for="male" class="label-Gender">
+                                <span class="content-Gender">Others</span>
+                            </label><br>
+                        </div>
+                    </div>
+
+                    <div class="med-pract">
+                        <div>
+                            <div>Is a medical practitioner:</div>
+                        </div>
+                        <div class="med-pract-rad">
+                            <label for="Yes">Yes</label>
+                            <input type="radio" name="Yes" id="Yes" required autocomplete="off">
+                            <label for="No">No</label>
+                            <input type="radio" name="No" id="No" required autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="address">
+                        <label for="Address" class="label-Address">
+                            <span class="content-Address">Address:</span>
+                        </label><br>
+                        <input type="text" name="Address" id="Address" required autocomplete="off"><br>
+
+                    </div>
+
+                    <div class="pincode">
+                        <label for="State" class="label-State">
+                            <span class="content-State">State:</span>
+                        </label><br>
+                        <input type="text" name="State" id="State" required autocomplete="off"><br>
+                        <label for="City" class="label-City">
+                            <span class="content-City">City:</span>
+                        </label><br>
+                        <input type="text" name="City" id="City" required autocomplete="off"><br>
+                        <label for="Pin-Code" class="label-Pin-Code">
+                            <span class="content-Pin-Code">Pin-Code:</span>
+                        </label><br>
+                        <input type="number" name="Pin-Code" id="Pin-Code" required autocomplete="off"><br>
+                    </div>
+                    
+                    <div class="number">
+                        <label for="Mobile-No" class="label-Mobile-No">
+                            <span class="content-Mobile-No">Mobile-No:</span>
+                        </label><br>
+                        <input type="number" name="Mobile-No" id="Mobile-No" required autocomplete="off"><br>
+                        <label for="Alternate-No" class="label-Alternate-No">
+                            <span class="content-Alternate-No">Alternate-No:</span>
+                        </label><br>
+                        <input type="number" name="Alternate-No" id="Alternate-No" autocomplete="off"><br>
+                    </div>
+
+                    <div class="vac-pre">
+                        <div>
+                            <div>Vaccination Preference:</div>
+                        </div>
+                        <div class="vac-pre-rad">
+                            <input type="radio" required name="home" id="home">
+                            <label for="home">At home</label><br>
+                            <input type="radio" required name="centre" id="centre">
+                            <label for="centre">At centre</label>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class=".btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+    </main>
+    <div class="modal-outer">
+        <div class="modal-inner">
+            <h2>DISCLAIMER</h2>
+            <p class="p-border">Please read this disclaimer very carefully before proceeding and submitting your application.
+            </p>
+            <ul>
+                <li>
+                    <h3>The correctness of the Information</h3>
+                    <p>The Information provided by the user must be truthful and correct to their best knowledge. If found out to be incorrect
+                    the concerned authorities have the right to cancel the appointment.</p>
+                </li>
+                <li>
+                    <h3>Risks involving the Vaccine</h3>
+                    <p>The Vaccine is still undergoing various research and is constantly improving. The Patient might experience some kind of
+                    allergies or side effects after taking the vaccine, these could include Pain around Injection Site, Headache, Fatigue,
+                    Muscle and Joint Pain & Unconsciousness. If you experience these symptoms contact a doctor immediately.</p>
+                </li>
+                <li>
+                    <h3>In case of missing the appointment</h3>
+                    <p>If due to any reason you failed to keep your appointment, Your appointment will be moved further according to the
+                    availability of slots of which you will be informed.</p>
+                </li>
+            </ul>
+            <!-- <div class="modal-end"> -->
+                <p>Rocket Vaccine is a platform which helps you connect with your nearest Healthcare Facilities. We are not responsible
+                should you suffer any losses. By clicking “I Agree” You will be accepting our terms and conditions.</p>
+            <!-- </div> -->
+            <div class="modal-btn">
+                <button class="btn-agree">I Agree</button>
+            </div>
+            <span class="modal-close">X</span>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".admin .banner h2").addEventListener("click", ()=> {
+            window.location.href = "./index.html";
+        });
+        document.querySelector(".logo").addEventListener("click", () => {
+                window.location.href = "./index.html";
+        });
+        let button = document.querySelector(".btn button");
+        let modalOuter = document.querySelector(".modal-outer");
+        let modalCLose = document.querySelector(".modal-close");
+
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            modalOuter.classList.add("modal-active");
+        });
+
+        modalCLose.addEventListener("click", () => {
+            modalOuter.classList.remove("modal-active");
+        });
+
+        document.querySelector(".btn-agree").addEventListener("click", () => {
+            window.location.href = "./otp.html";
+        });
+    </script>
+</body>
+</html>

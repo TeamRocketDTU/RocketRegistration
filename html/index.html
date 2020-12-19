@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Vaccine App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="register-btn"><a href="#register">Register</a></div>
+    <header>
+        <div class="admin">
+            <div class="banner">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="logo">
+                </div>
+                <h2><img src="../svgs/name2 .svg" alt=""></h2>
+            </div>
+            <p>
+                <a href="#">Admin<br> <span> login </span></a>
+            </p>
+        </div>
+    </header>
+
+    <div class="app-image">
+        <svg width="332" height="539" viewBox="0 0 332 539" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+                <rect x="4" width="324" height="531" rx="19" fill="#F0F0F0" />
+                <rect x="4.5" y="0.5" width="323" height="530" rx="18.5" stroke="black" />
+                <rect x="4.5" y="0.5" width="323" height="530" rx="18.5" stroke="url(#paint0_linear)" />
+            </g>
+            <defs>
+                <filter id="filter0_d" x="0" y="0" width="332" height="539" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear" x1="166" y1="0" x2="166" y2="531" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+
+            </defs>
+        </svg>
+        <h2>some app</h2>
+    </div>
+    <div class="circle"><a name="register"></a></div>
+    <main class="disclaimer">
+        <div class="info">
+            <h2>Info</h2>
+            <p>Rocket Vaccine is a system which handles the logistics and distribution of the COVID-19 vaccines to vaccination
+                centres
+                according to the demand and the availability of the vaccines in inventories.
+                Rocket Vaccine also provides the service for users to register themselves to get vaccinated in their nearby vaccine
+                centres or book an appointment to get vaccinated at the comfort of their home.
+            </p>
+        </div>
+
+        <div class="arrow">
+            <h4>
+                <a href="./register.html" >Register</a>
+            </h4>
+            <svg width="98" height="38" viewBox="0 0 98 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d)">
+                    <path
+                        d="M93.4142 16.4142C94.1953 15.6332 94.1953 14.3668 93.4142 13.5858L80.6863 0.857864C79.9052 0.0768158 78.6389 0.0768158 77.8579 0.857864C77.0768 1.63891 77.0768 2.90524 77.8579 3.68629L89.1716 15L77.8579 26.3137C77.0768 27.0948 77.0768 28.3611 77.8579 29.1421C78.6389 29.9232 79.9052 29.9232 80.6863 29.1421L93.4142 16.4142ZM4 17H92V13H4V17Z"
+                        fill="black" />
+                </g>
+                <defs>
+                    <filter id="filter0_d" x="0" y="0.272095" width="98" height="37.4558" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                    </filter>
+                </defs>
+            </svg>
+
+        </div>
+    </main>
+    <script>
+        document.querySelector(".arrow").addEventListener("click", ()=>{
+            window.location.href = "./register.html";
+        });
+        document.querySelector(".logo").addEventListener("click", () => {
+            window.location.href = "./index.html";
+        });
+        document.querySelector(".banner h2").addEventListener("click", () => {
+                window.location.href = "./index.html";
+        });
+    </script>
+</body>
+</html>

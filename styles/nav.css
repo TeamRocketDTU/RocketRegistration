@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.circle {
+  position: absolute;
+  background-color: #206df1;
+  height: 50vw;
+  width: 50vw;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transform: translate(25%, -10%);
+          transform: translate(25%, -10%);
+}
+
+header {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 10vh;
+}
+
+header .admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  border-bottom: 2px solid black;
+  padding: 0px 15px;
+}
+
+header .admin p {
+  text-align: center;
+  font-weight: bold;
+}
+
+header .admin p a {
+  text-decoration: none;
+  color: #d4dae2;
+}
+
+header .admin p a:hover {
+  color: #ad7600;
+}
+
+header .admin p a span {
+  font-size: 0.9rem;
+}
+
+header .admin .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .admin .banner .logo {
+  width: 80px;
+  height: 80px;
+}
+
+header .admin .banner .logo img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+header .admin h2 {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+header .admin h2 img {
+  -webkit-transform: rotate(-0.5deg);
+          transform: rotate(-0.5deg);
+}
+
+@media (max-width: 520px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  header .admin {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30vh;
+  }
+  header .admin .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .admin p a {
+    color: black;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

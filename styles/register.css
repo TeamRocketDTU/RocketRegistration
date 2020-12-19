@@ -1,0 +1,293 @@
+body {
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 5%;
+}
+
+main .form {
+  width: 50%;
+}
+
+main .form .address label::after,
+main .form .pincode label span::after,
+main .form .name label span::after,
+main .form .age label span::after,
+main .form .med-pract div > div::after,
+main .form .sex div > div::after,
+main .form .label-Mobile-No::after,
+main .form .vac-pre > div > div::after,
+main .form .uid label span::after {
+  content: "*";
+  color: red;
+}
+
+main .form input[type="number"]::-webkit-inner-spin-button,
+main .form input[type="number"]::-webkit-outer-spin-button,
+main .form input[type="number"] {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
+main .form input[type="text"],
+main .form input[type="number"] {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+main .form .pincode,
+main .form .sex,
+main .form .address,
+main .form .med-pract,
+main .form .vac-pre,
+main .form .name,
+main .form .age,
+main .form .uid {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .form .pincode {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .form .pincode label {
+  padding: 0 5px;
+}
+
+main .form .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
+main .form .number input {
+  margin: 0 5px;
+}
+
+main .form .med-pract {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 2px 5px -5px black;
+          box-shadow: 0px 2px 5px -5px black;
+  line-height: 30px;
+}
+
+main .form .med-pract .med-pract-rad {
+  padding: 0 5px;
+}
+
+main .form .vac-pre,
+main .form .sex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 2px 5px -5px black;
+          box-shadow: 0px 2px 5px -5px black;
+  line-height: 30px;
+}
+
+main .form .vac-pre .vac-pre-rad,
+main .form .vac-pre .gen-rad,
+main .form .sex .vac-pre-rad,
+main .form .sex .gen-rad {
+  padding: 0 5px;
+  line-height: 30px;
+}
+
+main .form .btn {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+main .form .btn button {
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #faac07;
+  border: 0;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+main .form .btn button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 520px) {
+  main .form {
+    width: 100%;
+  }
+  .pincode,
+  .sex,
+  .address,
+  .med-pract,
+  .vac-pre,
+  .name,
+  .age {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.modal-outer {
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: visibility 0s opacity 0.5s;
+  transition: visibility 0s opacity 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-outer .modal-inner {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  width: 50%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 5px black;
+          box-shadow: 0px 2px 5px black;
+}
+
+.modal-outer .modal-inner .p-border {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-outer .modal-inner h2 {
+  color: red;
+  line-height: 4vh;
+}
+
+.modal-outer .modal-inner ul li:nth-child(2) {
+  padding: 30px 0;
+}
+
+.modal-outer .modal-inner ul li {
+  list-style: none;
+}
+
+.modal-outer .modal-inner ul li h3 {
+  color: red;
+  line-height: 4vh;
+}
+
+.modal-outer .modal-inner ul li p {
+  line-height: 2vh;
+}
+
+.modal-outer .modal-inner .modal-btn {
+  text-align: center;
+}
+
+.modal-outer .modal-inner .modal-btn button {
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+/*# sourceMappingURL=register.css.map */
