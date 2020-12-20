@@ -93,17 +93,29 @@ header {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 550px) {
   header {
+    box-sizing: border-box;
     flex-direction: column;
     height: auto;
     .admin {
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
-      height: 30vh;
+      height: auto;
+      padding: 0;
       .banner {
         flex-direction: column;
+        height: auto;
+
+        h2 {
+          padding: 0;
+          margin: 0;
+          border-radius: 0px;
+          img {
+            height: 250px;
+          }
+        }
       }
       p a {
         color: black;
