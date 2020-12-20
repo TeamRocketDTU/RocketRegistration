@@ -58,5 +58,5 @@ const obj = {
 };
 
 regBtn.addEventListener("click", e => {
-    
+    //
 });

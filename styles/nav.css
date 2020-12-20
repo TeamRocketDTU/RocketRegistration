@@ -53,19 +53,28 @@ header .admin {
 header .admin p {
   text-align: center;
   font-weight: bold;
+  padding: 5px 10px;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 10px;
+  background-color: #faac07;
+  color: black;
+}
+
+header .admin p:focus {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 header .admin p a {
   text-decoration: none;
-  color: #d4dae2;
+  color: black;
 }
 
 header .admin p a:hover {
   color: #ad7600;
-}
-
-header .admin p a span {
-  font-size: 0.9rem;
 }
 
 header .admin .banner {

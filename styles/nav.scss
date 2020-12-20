@@ -39,13 +39,23 @@ header {
     padding: 0px 15px;
 
     p {
+      // display: flex;
+      // text-align: center;
+      // justify-content: center;
       text-align: center;
       font-weight: bold;
       padding: 5px 10px;
       box-shadow: 2px 2px 5px black;
+      transition: all 0.2s ease;
+      border-radius: 10px;
+      background-color: #faac07;
+      color: black;
+      &:focus {
+        transform: scale(0.5);
+      }
       a {
         text-decoration: none;
-        color: rgb(212, 218, 226);
+        color: black;
         &:hover {
           color: #ad7600;
         }
