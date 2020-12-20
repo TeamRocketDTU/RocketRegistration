@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="../styles/nav.css">
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: blue; */
+            height: 90vh;
+        }
+        .container{
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            height: 40%;
+            box-shadow: 1px 2px 5px black;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        h3{
+            font-size: 3rem;
+            color: rgba(143, 143, 12, 0.945);
+            line-height: 8vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="admin">
+            <div class="banner">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="logo">
+                </div>
+                <h2><img src="../svgs/name2 .svg" alt=""></h2>
+            </div>
+            <p>
+                <a href="#"">Login</a>
+            </p>
+        </div>
+    </header>
+    <div class="circle"><a name="register"></a></div>
+    <main>
+        <div class="container">
+            <h3>Confirmation</h3>
+            <p>Your application have been registered successfully.</p>
+        </div>
+    </main>
+    <script>
+        document.querySelector(".admin .banner h2").addEventListener("click", () => {
+                window.location.href = "./index.html";
+            });
+        document.querySelector(".logo").addEventListener("click", () => {
+            window.location.href = "./index.html";
+        });
+    </script>
+</body>
+</html>
