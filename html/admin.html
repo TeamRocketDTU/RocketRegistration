@@ -19,7 +19,7 @@
                 <h2><img src="../svgs/name2 .svg" alt=""></h2>
             </div>
             <p>
-                <a href="#">Login</a>
+                <a class="btn-btn" href="#">Logout</a>
             </p>
         </div>
     </header>
@@ -100,7 +100,10 @@
             window.location.href = "../index.html";
         });
         document.querySelector(".banner h2").addEventListener("click", () => {
-                window.location.href = "../index.html";
+            window.location.href = "../index.html";
+        });
+        document.querySelector(".btn-btn").addEventListener("click", () => {
+            window.location.href = "./admin-login.html";
         });
     </script>
 </body>
