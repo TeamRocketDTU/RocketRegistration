@@ -60,3 +60,19 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .container {
+    .card {
+      width: auto;
+      // padding: 0px;
+      .name,
+      .pass {
+        width: 60vw;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

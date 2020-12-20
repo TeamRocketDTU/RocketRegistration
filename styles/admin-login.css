@@ -85,4 +85,18 @@
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
+
+@media (max-width: 1300px) {
+  .container .card {
+    width: auto;
+  }
+  .container .card .name,
+  .container .card .pass {
+    width: 60vw;
+  }
+  .container .card .name input,
+  .container .card .pass input {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=admin-login.css.map */
