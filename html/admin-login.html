@@ -17,7 +17,9 @@
                 <h2><img src="../svgs/name2 .svg" alt=""></h2>
             </div>
             <p>
-                <a href="#">Login</a>
+                <button class="btn-btn" style="border: none; background: #faac07;">
+                    <a href="#">Login</a>
+                </button>
             </p>
         </div>
     </header>
@@ -40,7 +42,15 @@
         </div>
     </div>
     <script>
-        
+        document.querySelector(".btn-btn").addEventListener("click", () => {
+                window.location.href = "./admin-login.html";
+        });
+        document.querySelector(".logo").addEventListener("click", () => {
+                window.location.href = "./index.html";
+        });
+        document.querySelector(".banner h2").addEventListener("click", () => {
+            window.location.href = "./index.html";
+        });
     </script>
 </body>
 </html>

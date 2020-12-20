@@ -24,7 +24,9 @@
                 <h2><img src="../svgs/name2 .svg" alt=""></h2>
             </div>
             <p>
-                <a href="#">Login</a>
+                <button class="btn-btn" style="border: none; background: #faac07;">
+                    <a href="#">Login</a>
+                </button>
             </p>
         </div>
     </header>
@@ -197,6 +199,9 @@
         });
         document.querySelector(".register-btn").addEventListener("click", () => {
             window.location.href = "./register.html"
+        });
+        document.querySelector(".btn-btn").addEventListener("click", () => {
+                window.location.href = "./admin-login.html";
         });
     </script>
     <script src="../styles/language.js"></script>
