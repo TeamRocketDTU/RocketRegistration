@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/nav.css">
 </head>
 <body>
+    <div class="register-btn"><a href="#register">Language</a></div>
     <header>
         <div class="admin">
             <div class="banner">
@@ -33,20 +34,20 @@
                     <div class="name">
                         <label for="name" class="label-name">
                             <span class="content-name">Name:</span>
-                        </label><br>
+                        </label>
                         <input type="text" name="name" id="name" required autocomplete="off"><br>
                     </div>
                     <div class="age">
                         <label for="age" class="label-age">
                             <span class="content-age">Age:</span>
-                        </label><br>
+                        </label>
                         <input type="number" name="age" id="age" required autocomplete="off"><br>
                     </div>
 
                     <div class="uid">
                         <label for="uid" class="label-uid">
                             <span class="content-uid">Aadhar No:</span>
-                        </label><br>
+                        </label>
                         <input type="number" name="uid" id="uid" required autocomplete="off"><br>
                     </div>
 
@@ -76,10 +77,10 @@
                             <div>Is a medical practitioner:</div>
                         </div>
                         <div class="med-pract-rad">
-                            <label for="Yes">Yes</label>
+                            <label for="Yes" class="label-med-pract">Yes</label>
                             <input type="radio" name="Yes" id="Yes" required autocomplete="off">
-                            <label for="No">No</label>
-                            <input type="radio" name="No" id="No" required autocomplete="off">
+                            <label for="Yes" class="label-med-pract">No</label>
+                            <input type="radio" name="Yes" id="No" required autocomplete="off">
                         </div>
                     </div>
 
@@ -122,10 +123,10 @@
                             <div>Vaccination Preference:</div>
                         </div>
                         <div class="vac-pre-rad">
-                            <input type="radio" required name="home" id="home">
+                            <input type="radio" name="home" id="home" required autocomplete="off">
                             <label for="home">At home</label><br>
-                            <input type="radio" required name="centre" id="centre">
-                            <label for="centre">At centre</label>
+                            <input type="radio" name="home" id="centre" required autocomplete="off">
+                            <label for="home">At centre</label>
                         </div>
                     </div>
                     <div class="btn">
@@ -191,5 +192,6 @@
             window.location.href = "./otp.html";
         });
     </script>
+    <script src="../styles/language.js"></script>
 </body>
 </html>

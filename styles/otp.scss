@@ -21,7 +21,7 @@ body {
   align-items: center;
 
   .inner-otp {
-    min-height: 80vh;
+    min-height: 70vh;
     width: 35rem;
     border-radius: 30px;
     padding: 0rem 5rem;
@@ -89,6 +89,20 @@ body {
         margin: 10px 0px;
         padding: 5px 10px;
       }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    height: 100%;
+  }
+  .out-otp {
+    width: 100%;
+    height: 100%;
+    .inner-otp {
+      width: 100%;
+      height: 100%;
     }
   }
 }
