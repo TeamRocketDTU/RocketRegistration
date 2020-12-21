@@ -79,7 +79,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  cursor: pointer;
 }
 
 .disclaimer .arrow h4 {
@@ -97,6 +96,7 @@ body {
 
 .disclaimer .arrow svg {
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .disclaimer .img {
