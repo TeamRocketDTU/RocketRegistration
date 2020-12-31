@@ -45,7 +45,7 @@
                     <g filter="url(#filter0_d)">
                         <path
                             d="M93.4142 16.4142C94.1953 15.6332 94.1953 14.3668 93.4142 13.5858L80.6863 0.857864C79.9052 0.0768158 78.6389 0.0768158 77.8579 0.857864C77.0768 1.63891 77.0768 2.90524 77.8579 3.68629L89.1716 15L77.8579 26.3137C77.0768 27.0948 77.0768 28.3611 77.8579 29.1421C78.6389 29.9232 79.9052 29.9232 80.6863 29.1421L93.4142 16.4142ZM4 17H92V13H4V17Z"
-                            fill="black" />
+                            fill="white" />
                     </g>
                     <defs>
                         <filter id="filter0_d" x="0" y="0.272095" width="98" height="37.4558" filterUnits="userSpaceOnUse"
@@ -62,11 +62,13 @@
                 </svg>
             </div>
         </div>
-        <div class="img">
-            <img src="../images/cor2.jpg" alt="#">
-            <img src="../images/cor3.webp" alt="#">
-        </div>
     </main>
+    <div class="img">
+        <div class="slide fade">
+            
+        </div>
+    </div>
+    <div class="gradient"></div>
     <script>
         document.querySelector(".btn-btn").addEventListener("click", () => {
             window.location.href = "./html/admin-login.html";
@@ -80,6 +82,22 @@
         document.querySelector(".banner h2").addEventListener("click", () => {
             window.location.href = "./index.html";
         });
+
+        let slideIndex = 0;
+        let images = new Array("../images/cor2.jpg", "../images/cor3.webp", "../images/cor7.jpg", "../images/cor8.jpg");
+
+        doSlideShow();
+
+        function doSlideShow(){
+            if(slideIndex >= images.length){slideIndex = 0;}
+
+            let slides = document.querySelector(".slide");
+
+            slides.style.background = `url(${images[slideIndex++]}) center/cover no-repeat fixed`;
+
+            setTimeout(doSlideShow, 3000);
+
+        }
     </script>
 </body>
 </html>
