@@ -121,6 +121,8 @@ body {
 .fade {
   -webkit-animation: fade 1.5s ease;
           animation: fade 1.5s ease;
+  -webkit-transform: all 0.4s ease-in;
+          transform: all 0.4s ease-in;
 }
 
 @-webkit-keyframes fade {
